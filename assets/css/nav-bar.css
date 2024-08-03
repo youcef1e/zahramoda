@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Cairo:wght@200..1000&family=Ruwudu:wght@400;500;600;700&display=swap');
+
+:root {
+  --main-color: #FC007C;
+  --second-color:#4D4C4C;
+  --third-color:#C6C6C6;
+  --radius :.5rem;
+  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:"Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  overflow: visible;
+  color: white; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.1rem;
+  direction: rtl;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 0 7vw;
+  height: 5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  
+}
+
+.navbar .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: .7rem;
+}
+
+.navbar a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 14px 20px;
+}
+
+.navbar .left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .right {
+  display: flex;
+  gap: 10px;
+}
+
+
+.right i{
+  color: var(--main-color);
+  font-size: 1.8rem;
+}
+
+
+
+
+/* search bar  */
+.searchInputWrapper {
+    position: relative;
+    display: inline-block;
+    transition: width 0.3s ease;
+    width: 13rem;
+  }
+  
+  .searchInput {
+    width: 100%;
+    padding-right: 2rem;
+    padding-top: .2rem;
+    padding-bottom: 0.2rem;
+    box-sizing: border-box;
+    transition: width 0.3s ease; 
+    background-color: #cdcbcc;
+    border: none;
+    border-radius: .6rem;
+    outline: none; 
+  }
+  
+  .searchInput:focus {
+    width: calc(100% + 20px); 
+  }
+  
+  .searchInputIcon {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+    color: var(--main-color);
+  }
+  
+  /* end of search bar */

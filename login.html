@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS links-->
+    <link rel="stylesheet" href="assets/css/nav-bar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <title>زهرة تسجيل الدخول</title>
+</head>
+<body>
+<!-- Navbar -->
+
+<div class="navbar">
+    <div class="left">
+        <div class="searchInputWrapper">
+            <input class="searchInput" type="text" >
+            <i class="searchInputIcon fi fi-rr-search"></i>
+        </div>
+        
+    </div>
+    <div class="logo">
+        <a href="index.html">
+            <img id="logo" src="./assets/images/asset_11.png" width="100" alt="">
+        </a>
+    </div>
+    <div class="right">
+        <a href="login.html" ><i class="fi fi-rr-circle-user"></i></a>
+        <a href="cart.html"><i class="fi fi-rr-shopping-bag"></i></a>
+    </div>
+</div>
+<!-- Navbar -->
+<!--main structure-->
+<div class="log-pic">
+    <i class="fa-regular fa-circle-user " id="picture"></i>
+</div>
+
+<div class="wrapper">
+    <div class="form-container">
+       <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked >
+          <input type="radio" name="slide" id="signup" >
+          <label for="login" class="slide login">تسجيل الدخول</label>
+          <label for="signup" class="slide signup">التسجيل</label>
+          <div class="slider-tab"></div>
+       </div>
+       <div class="form-inner">
+          <form action="#" class="login">
+             <div class="field">
+                <label for="phone">رقم الهاتف</label>
+                <input type="text" id="phone" required maxlength="15">
+             </div>
+             <div class="field">
+                <label for="pass">كلمة المرور</label>
+                <input type="password" id="pass" required>
+             </div>
+             <div class="pass-link">
+                <a href="#">نسيت كلمة السر ؟</a>
+             </div>
+             <div class="btn">
+                <input type="submit" value="دخول">
+             </div>
+          </form>
+          <form action="#" class="signup register">
+            <div class="field">
+                <label for="whatsapp-num">رقم الواتساب</label>
+                <select id="country-code">
+                    <option value="+90">+90</option>
+                    <option value="+1">+970</option>
+                    <!-- Add more country codes as needed -->
+                </select>
+                <input type="text" required id="whatsapp-num" maxlength="15">
+            </div>
+             <div class="field">
+                <label for="password">كلمة السر</label>
+                <input type="password"  required id="password"> 
+             </div>
+             <div class="field">
+                <label for="pass-repeat">تأكيد كلمة السر</label>
+                <input type="password"  required id="pass-repeat">
+             </div>
+             <div class="field otp">
+                <div id="otp-btn">احصل على رمز التاكيد</div>
+                <input type="tect"  required id="otp" placeholder="قم بإدخال رمز التاكيد الذي حصلت عليه من واتساب">
+             </div>
+             <div class="term">
+                <input type="checkbox" required id="whatsapp-terms">
+                <label for="whatsapp-terms">اوافق على <a href="#">استخدام واتساب</a> لإبلاغي بحالة الطلبات ومعلومات المنتجات </label>
+            </div>
+            <div class="term">
+                <input type="checkbox" required id="terms">
+                <label for="terms">اوافق على <a href="#"> اتفاقية البيع وسياسة الخصوصية وسياسة الإعادة والإستبدال </a>   </label>
+            </div>
+            
+             <div class=" btn">
+                <input type="submit" value="تسجيل">
+             </div>
+             <div class="social-reg">
+                 <div><a href="#"><i class="fi fi-brands-google"></i>التسجيل من خلال </a></div>
+                 <div><a href="#"><i class="fi fi-brands-facebook"></i>التسجيل من خلال </a></div>
+                </div>
+          </form>
+
+       </div>
+    </div>
+ </div>
+<!--end main structure-->
+
+<!--footer-->
+<footer class="footer">
+    <div class="footer-column">
+        <div class="logoo">
+            <img src="assets/images/footer_logo.jpeg" alt="Logo">
+            <div>
+                
+                <p>زهرة هي شركة متخصصة بصناعة وتصدير الملابس النسائية , أنشأت كعلامة مسجلة عام 2023 لتلبي رغبات محبي تصاميم المحجبات الأنيقة في الشرق الأوسط</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-column">
+        <h3>معلومات هامة</h3>
+        <ul>
+            <li><a href="">سياسة الإعادة والإستبدال</a></li>
+            <li><a href="">اتفاقية العضوية</a></li>
+            <li><a href="">الشروط والأحكام</a></li>
+            <li><a href="">الخصوصية والأمان</a></li>
+            <li><a href="">اتفاقية المبيعات</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>الأقسام</h3>
+        <ul>
+            <li><a href="">عبايات</a></li>
+            <li><a href="">فساتين</a></li>
+            <li><a href="">أطقم</a></li>
+            <li><a href="">التخفيضات</a></li>
+            <li><a href="">الصفحة الرئيسية</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>معلومات التواصل</h3>
+        <ul>
+            <li><a href="">خدمة العملاء<span>|</span>  00905312909408</a></li>
+            <li><a href="">العنوان <span>|</span> Beştelsiz, 75/2. Sk., 34025 Zeytinburnu/İstanbul</a></li>
+            <li><a href="" >تابعنا على <span>|</span> 
+                <i class="fa-brands fa-facebook social-logo"></i>
+                <i class="fa-brands fa-tiktok social-logo"></i>
+                <i class="fa-brands fa-instagram social-logo"></i>
+            </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<div class="footer-cotainer">
+<div class="finalfooter">
+    <div>
+        <img src="assets/images/payment.svg" alt="">
+    </div>
+    <div>
+        <p style="font-family: 'cairo';">ZAHRA FASHION İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ ©</p>
+    </div>
+    <div class="elemets-down">
+        <div>
+            <img src="assets/images/kargo.svg" alt="">
+            <img src="assets/images/company.svg" alt="">
+        </div>
+        <div>
+            <i class=" fi fi-brands-facebook social-logo"></i>
+            <i class="fi fi-brands-tik-tok social-logo"></i>
+            <i class="fi fi-brands-instagram social-logo"></i>
+        </div>
+    </div>
+</div>
+</div>
+<!--end of footer-->
+
+<script src="assets/js/login.js"></script>
+</body>
+</html>

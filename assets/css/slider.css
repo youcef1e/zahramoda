@@ -1,0 +1,46 @@
+:root {
+    --main-color: #ff69b4;
+    --second-color:#4D4C4C;
+  }
+.slider {
+    position: relative;
+    width: 85%;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.navigation {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.nav-dot {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    border: .5px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-dot.active {
+    background-color: var(--main-color)
+}

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+
+    <!-- CSS links-->
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="assets/css/nav-bar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <title>zahra</title>
+</head>
+<body>
+<!-- Navbar -->
+
+<div class="navbar">
+    <div class="left">
+        <div class="searchInputWrapper">
+            <input class="searchInput" type="text" >
+            <i class="searchInputIcon fi fi-rr-search"></i>
+        </div>
+        
+    </div>
+    <div class="logo">
+        <a href="index.html">
+            <img id="logo" src="./assets/images/asset_11.png" width="100" alt="">
+        </a>
+    </div>
+    <div class="right">
+        <a href="login.html" ><i class="fi fi-rr-circle-user"></i></a>
+        <a href="cart.html"><i class="fi fi-rr-shopping-bag"></i></a>
+    </div>
+</div>
+<!-- Navbar -->
+<!-- Slider -->
+ <div class="slider-container">
+<div class="slider">
+    <div class="slides">
+        <div class="slide">
+            <img src="assets/images/hero_1.png" alt="Image 1">
+        </div>
+        <div class="slide">
+            <img src="assets/images/hero_1.png" alt="Image 2">
+        </div>
+        <div class="slide">
+            <img src="assets/images/hero_1.png" alt="Image 3">
+        </div>
+        <div class="slide">
+            <img src="assets/images/hero_1.png" alt="Image 4">
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="nav-dot" onclick="currentSlide(0)"></div>
+        <div class="nav-dot" onclick="currentSlide(1)"></div>
+        <div class="nav-dot" onclick="currentSlide(2)"></div>
+        <div class="nav-dot" onclick="currentSlide(3)"></div>
+    </div>
+</div>
+</div>
+<!-- Slider -->
+
+<!--second nav bar -->
+<nav class="second-nav">
+    <div class="links-nav">
+    <ul class="nav-links">
+        <li><a href="#home">الكل</a></li>
+        <li><a href="#about">عبايات</a></li>
+        <li><a href="#services">فساتين</a></li>
+        <li><a href="#contact">أطقم</a></li>
+        <li><a href="#contact">نقابات</a></li>
+        <li><a href="#contact">تخفيضات</a></li>
+    </ul>
+</div>
+<div class="range">
+    <div class="field">
+      <div class="value left" id="rangeValue">1000₺</div>
+      <input type="range" min="10" max="100000" value="100" step="5" id="rangeInput">
+    </div>
+  </div>
+</nav>
+
+<!--end of second nav bar -->
+<!--product grid-->
+<div class="big-container">
+    <div class="row">
+        <i class="fi fi-rr-heart heart"></i>
+        <i class="fi fi-rr-shopping-bag-add bag"></i>
+        <div class="product-price">1000₺</div>
+        <div class="images-container">
+            <a href="product.html">
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            </a>
+        </div>
+        <div class="dots">
+            <div class="dot active" onclick="changeSlide(this, 0)"></div>
+            <div class="dot" onclick="changeSlide(this, 1)"></div>
+            <div class="dot" onclick="changeSlide(this, 2)"></div>
+        </div>
+    </div>
+    <div class="row">
+        <i class="fi fi-rr-heart heart"></i>
+        <i class="fi fi-rr-shopping-bag-add bag"></i>
+        <div class="product-price">1000₺</div>
+        <div class="images-container">
+            <a href="product.html">
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            </a>
+        </div>
+        <div class="dots">
+            <div class="dot active" onclick="changeSlide(this, 0)"></div>
+            <div class="dot" onclick="changeSlide(this, 1)"></div>
+            <div class="dot" onclick="changeSlide(this, 2)"></div>
+        </div>
+    </div>
+    <div class="row">
+        <i class="fi fi-rr-heart heart"></i>
+        <i class="fi fi-rr-shopping-bag-add bag"></i>
+        <div class="product-price">1000₺</div>
+        <div class="images-container">
+            <a href="product.html">
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            </a>
+        </div>
+        <div class="dots">
+            <div class="dot active" onclick="changeSlide(this, 0)"></div>
+            <div class="dot" onclick="changeSlide(this, 1)"></div>
+            <div class="dot" onclick="changeSlide(this, 2)"></div>
+        </div>
+    </div>
+    <div class="row">
+        <i class="fi fi-rr-heart heart"></i>
+        <i class="fi fi-rr-shopping-bag-add bag"></i>
+        <div class="product-price">1000₺</div>
+        <div class="images-container">
+            <a href="product.html">
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            </a>
+        </div>
+        <div class="dots">
+            <div class="dot active" onclick="changeSlide(this, 0)"></div>
+            <div class="dot" onclick="changeSlide(this, 1)"></div>
+            <div class="dot" onclick="changeSlide(this, 2)"></div>
+        </div>
+    </div>
+    <div class="row">
+        <i class="fi fi-rr-heart heart"></i>
+        <i class="fi fi-rr-shopping-bag-add bag"></i>
+        <div class="product-price">1000₺</div>
+        <div class="images-container">
+            <a href="product.html">
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            </a>
+        </div>
+        <div class="dots">
+            <div class="dot active" onclick="changeSlide(this, 0)"></div>
+            <div class="dot" onclick="changeSlide(this, 1)"></div>
+            <div class="dot" onclick="changeSlide(this, 2)"></div>
+        </div>
+    </div>
+    <div class="row">
+        <i class="fi fi-rr-heart heart"></i>
+        <i class="fi fi-rr-shopping-bag-add bag"></i>
+        <div class="product-price">1000₺</div>
+        <div class="images-container">
+            <a href="product.html">
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            </a>
+        </div>
+        <div class="dots">
+            <div class="dot active" onclick="changeSlide(this, 0)"></div>
+            <div class="dot" onclick="changeSlide(this, 1)"></div>
+            <div class="dot" onclick="changeSlide(this, 2)"></div>
+        </div>
+    </div>
+    <div class="row">
+        <i class="fi fi-rr-heart heart"></i>
+        <i class="fi fi-rr-shopping-bag-add bag"></i>
+        <div class="product-price">1000₺</div>
+        <div class="images-container">
+            <a href="product.html">
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            </a>
+        </div>
+        <div class="dots">
+            <div class="dot active" onclick="changeSlide(this, 0)"></div>
+            <div class="dot" onclick="changeSlide(this, 1)"></div>
+            <div class="dot" onclick="changeSlide(this, 2)"></div>
+        </div>
+    </div>
+    <div class="row">
+        <i class="fi fi-rr-heart heart"></i>
+        <i class="fi fi-rr-shopping-bag-add bag"></i>
+        <div class="product-price">1000₺</div>
+        <div class="images-container">
+            <a href="product.html">
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            </a>
+        </div>
+        <div class="dots">
+            <div class="dot active" onclick="changeSlide(this, 0)"></div>
+            <div class="dot" onclick="changeSlide(this, 1)"></div>
+            <div class="dot" onclick="changeSlide(this, 2)"></div>
+        </div>
+    </div>
+    <div class="row">
+        <i class="fi fi-rr-heart heart"></i>
+        <i class="fi fi-rr-shopping-bag-add bag"></i>
+        <div class="product-price">1000₺</div>
+        <div class="images-container">
+            <a href="product.html">
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            </a>
+        </div>
+        <div class="dots">
+            <div class="dot active" onclick="changeSlide(this, 0)"></div>
+            <div class="dot" onclick="changeSlide(this, 1)"></div>
+            <div class="dot" onclick="changeSlide(this, 2)"></div>
+        </div>
+    </div>
+    <div class="row">
+        <i class="fi fi-rr-heart heart"></i>
+        <i class="fi fi-rr-shopping-bag-add bag"></i>
+        <div class="product-price">1000₺</div>
+        <div class="images-container">
+            <a href="product.html">
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            </a>
+        </div>
+        <div class="dots">
+            <div class="dot active" onclick="changeSlide(this, 0)"></div>
+            <div class="dot" onclick="changeSlide(this, 1)"></div>
+            <div class="dot" onclick="changeSlide(this, 2)"></div>
+        </div>
+    </div>
+    <div class="row">
+        <i class="fi fi-rr-heart heart"></i>
+        <i class="fi fi-rr-shopping-bag-add bag"></i>
+        <div class="product-price">1000₺</div>
+        <div class="images-container">
+            <a href="product.html">
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            </a>
+        </div>
+        <div class="dots">
+            <div class="dot active" onclick="changeSlide(this, 0)"></div>
+            <div class="dot" onclick="changeSlide(this, 1)"></div>
+            <div class="dot" onclick="changeSlide(this, 2)"></div>
+        </div>
+    </div>
+    <div class="row">
+        <i class="fi fi-rr-heart heart"></i>
+        <i class="fi fi-rr-shopping-bag-add bag"></i>
+        <div class="product-price">1000₺</div>
+        <div class="images-container">
+            <a href="product.html">
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            </a>
+        </div>
+        <div class="dots">
+            <div class="dot active" onclick="changeSlide(this, 0)"></div>
+            <div class="dot" onclick="changeSlide(this, 1)"></div>
+            <div class="dot" onclick="changeSlide(this, 2)"></div>
+        </div>
+    </div>
+    <div class="row">
+        <i class="fi fi-rr-heart heart"></i>
+        <i class="fi fi-rr-shopping-bag-add bag"></i>
+        <div class="product-price">1000₺</div>
+        <div class="images-container">
+            <a href="product.html">
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            </a>
+        </div>
+        <div class="dots">
+            <div class="dot active" onclick="changeSlide(this, 0)"></div>
+            <div class="dot" onclick="changeSlide(this, 1)"></div>
+            <div class="dot" onclick="changeSlide(this, 2)"></div>
+        </div>
+    </div>
+    <div class="row">
+        <i class="fi fi-rr-heart heart"></i>
+        <i class="fi fi-rr-shopping-bag-add bag"></i>
+        <div class="product-price">1000₺</div>
+        <div class="images-container">
+            <a href="product.html">
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            </a>
+        </div>
+        <div class="dots">
+            <div class="dot active" onclick="changeSlide(this, 0)"></div>
+            <div class="dot" onclick="changeSlide(this, 1)"></div>
+            <div class="dot" onclick="changeSlide(this, 2)"></div>
+        </div>
+    </div>
+    <div class="row">
+        <i class="fi fi-rr-heart heart"></i>
+        <i class="fi fi-rr-shopping-bag-add bag"></i>
+        <div class="product-price">1000₺</div>
+        <div class="images-container">
+            <a href="product.html">
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            </a>
+        </div>
+        <div class="dots">
+            <div class="dot active" onclick="changeSlide(this, 0)"></div>
+            <div class="dot" onclick="changeSlide(this, 1)"></div>
+            <div class="dot" onclick="changeSlide(this, 2)"></div>
+        </div>
+    </div>
+    <div class="row">
+        <i class="fi fi-rr-heart heart"></i>
+        <i class="fi fi-rr-shopping-bag-add bag"></i>
+        <div class="product-price">1000₺</div>
+        <div class="images-container">
+            <a href="product.html">
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            <div class="image" style="background-image: url('assets/images/hero_1.png');"></div>
+            </a>
+        </div>
+        <div class="dots">
+            <div class="dot active" onclick="changeSlide(this, 0)"></div>
+            <div class="dot" onclick="changeSlide(this, 1)"></div>
+            <div class="dot" onclick="changeSlide(this, 2)"></div>
+        </div>
+    </div>
+    
+
+    <!-- Repeat the above row structure for more rows -->
+</div>
+<!--end of product grid-->
+
+<!--footer-->
+<footer class="footer">
+    <div class="footer-column">
+        <div class="logoo">
+            <img src="assets/images/footer_logo.jpeg" alt="Logo">
+            <div>
+                
+                <p>زهرة هي شركة متخصصة بصناعة وتصدير الملابس النسائية , أنشأت كعلامة مسجلة عام 2023 لتلبي رغبات محبي تصاميم المحجبات الأنيقة في الشرق الأوسط</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-column">
+        <h3>معلومات هامة</h3>
+        <ul>
+            <li><a href="">سياسة الإعادة والإستبدال</a></li>
+            <li><a href="">اتفاقية العضوية</a></li>
+            <li><a href="">الشروط والأحكام</a></li>
+            <li><a href="">الخصوصية والأمان</a></li>
+            <li><a href="">اتفاقية المبيعات</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>الأقسام</h3>
+        <ul>
+            <li><a href="">عبايات</a></li>
+            <li><a href="">فساتين</a></li>
+            <li><a href="">أطقم</a></li>
+            <li><a href="">التخفيضات</a></li>
+            <li><a href="">الصفحة الرئيسية</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>معلومات التواصل</h3>
+        <ul>
+            <li><a href="">خدمة العملاء<span>|</span>  00905312909408</a></li>
+            <li><a href="">العنوان <span>|</span> Beştelsiz, 75/2. Sk., 34025 Zeytinburnu/İstanbul</a></li>
+            <li><a href="" >تابعنا على <span>|</span> 
+                <i class="fa-brands fa-facebook social-logo"></i>
+                <i class="fa-brands fa-tiktok social-logo"></i>
+                <i class="fa-brands fa-instagram social-logo"></i>
+            </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<div class="footer-cotainer">
+<div class="finalfooter">
+    <div>
+        <img src="assets/images/payment.svg" alt="">
+    </div>
+    <div>
+        <p style="font-family: 'cairo';">ZAHRA FASHION İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ ©</p>
+    </div>
+    <div class="elemets-down">
+        <div>
+            <img src="assets/images/kargo.svg" alt="">
+            <img src="assets/images/company.svg" alt="">
+        </div>
+        <div>
+            <i class=" fi fi-brands-facebook social-logo"></i>
+            <i class="fi fi-brands-tik-tok social-logo"></i>
+            <i class="fi fi-brands-instagram social-logo"></i>
+        </div>
+    </div>
+</div>
+</div>
+<!--end of footer-->
+<!--scripts-->
+
+<script src="assets/js/slider.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

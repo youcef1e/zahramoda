@@ -1,0 +1,298 @@
+
+.log-pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 0;
+
+}
+
+#picture{
+    font-size: 8rem;
+    color: var(--main-color);
+}
+
+
+::selection{
+    background: #fa4299;
+    color: #fff;
+  }
+  .wrapper{
+    overflow: hidden;
+    margin: 0 auto;
+    height: auto;
+    max-width: 390px;
+    background: var(--third-color);
+    border-radius: .5rem;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  }
+  .wrapper .title-text{
+    display: flex;
+    width: 200%;
+  }
+  .wrapper .title{
+    width: 50%;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  .wrapper .slide-controls{
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: var(--second-color);
+    overflow: hidden;
+    justify-content: space-between;
+    border-radius:.5rem;
+  }
+  .slide-controls .slide{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.6s ease;
+  }
+
+  .slide-controls .slider-tab{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 0;
+    border-radius: 5px;
+    background:var(--main-color);
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  #signup:checked ~ .slider-tab{
+    left: 50%;
+  }
+  #signup:checked ~ label.signup{
+    color: #fff;
+    cursor: default;
+    user-select: none;
+  }
+
+  #login:checked ~ label.login{
+    cursor: default;
+    user-select: none;
+  }
+  .wrapper .form-container{
+    width: 100%;
+    overflow: hidden;
+  }
+  .form-container .form-inner{
+    display: flex;
+    width: 200%;
+  }
+  .form-container .form-inner form{
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+    margin-top: 4rem;
+  }
+  .form-inner form .field{
+    height: auto;
+    position: relative;
+    width: 100%;
+    margin-top: .5rem;
+    direction: rtl;
+  }
+  .form-inner form .field input{
+    height: 2.45rem;
+    width: 80%;
+    outline: none;
+    padding-right: 1rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+ 
+  }
+  .form-inner form .field label{
+    margin-right: 2rem;
+    margin-bottom: .5rem;
+    color: var(--second-color);
+
+
+  }
+
+  .form-inner form .pass-link{
+    margin-top: 5px;
+    margin-right: 2.5rem;
+    direction: rtl;
+  }
+  .form-inner form .signup-link{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .form-inner form .pass-link a,
+  .form-inner form .signup-link a{
+    color: #fa4299;
+    text-decoration: none;
+  }
+  .form-inner form .pass-link a:hover,
+  .form-inner form .signup-link a:hover{
+    text-decoration: underline;
+  }
+  form .btn{
+    height: 5rem;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  form .btn input[type="submit"]{
+    position: relative;
+    width: 8rem;
+    height: 2.3rem;
+    background: var(--main-color);
+    border: none;
+    color: #fff;
+    padding-left: 0;
+    border-radius: .5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 2rem;
+
+}
+
+#country-code{
+    position: absolute;
+    height: 2.45rem;
+    outline: none;
+    padding-right: 1rem;
+    border-radius: .5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 300;
+    left: 2.8rem;
+    top: 32%;
+    background:  var(--main-color);;
+}
+#otp{
+    font-size: .6rem;
+    padding-right: 7rem;
+}
+.otp{
+    margin-top: 1.4rem !important;
+}
+#otp-btn{
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    height: 2.45rem;
+    outline: none;
+    padding: 0 .6rem;
+    border-radius: .5rem;
+    border: none;
+    font-size: .6rem;
+    color: #fff;
+    right: 1.8rem;
+    background:  var(--main-color);;
+}
+.term{
+    font-size: .5rem;
+}
+.term a{
+    text-decoration: none;
+    color: var(--main-color);
+    position: relative;
+}
+
+.term {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 2rem;
+    direction: rtl;
+}
+.term label{margin-right: .4rem;}
+input[type="checkbox"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+    border-radius: 50%; /* Make it circular */
+    margin-right: .5rem;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--main-color);
+    border: 1px solid #fff;
+}
+
+
+input[type="checkbox"]::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Ensure the inside is circular */
+    background-color: transparent;
+}
+
+input[type="checkbox"]:checked::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.social-reg{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-size: .7rem;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin: 0rem 2rem;
+}
+.social-reg a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-reg div{
+    background-color: var(--second-color);
+    width: 100%;
+    text-align: center;
+    border-radius: .5rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+.social-reg i{
+    font-size: 1.2rem;
+    margin-right:.5rem;
+
+}
+.register{
+    display: none;
+}
